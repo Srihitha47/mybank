@@ -84,6 +84,15 @@ function addUser() {
   users.push(user);
   showLogin();
 }
+function toggle(color){
+  if(color=='dark'){
+    document.body.style.background="black";
+    document.body.style.color="white";
+  }else{
+    document.body.style.background="white";
+    document.body.style.color="black";
+  }
+}
 function chkUser() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
